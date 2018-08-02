@@ -85,7 +85,7 @@ def create_parse_plan(strmsg, factory=Factory):
     separators = ['\r']
 
     # Extract the rest of the separators. Defaults used if not present.
-    assert strmsg[:3] in ('MSH')
+#     assert strmsg[:3] in ('MSH')
     sep0 = strmsg[3]
     seps = list(strmsg[3: strmsg.find(sep0, 4)])
 
